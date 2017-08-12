@@ -1,5 +1,25 @@
 {% extends "layout.html" %}
 
 {% block content %}
-<h1>Welcome to tripplanner!</h1>
+<h1>Welcome to TripPlanner!</h1>
+<label>Hotels</label>
+<select>
+    {% for hotel in templateHotels %}
+    	<option><a href='#'>{{hotel.name}}</a></option>
+    {% endfor %}
+</select>
+
+<label>Restaurants</label>
+<select>
+    {% for restaurant in templateRestaurants %}
+    	<option><a href='#'>{{restaurant.name}}</a></option>
+    {% endfor %}
+</select>
+
+<label>Activities</label>
+<select>
+    {% for activity in templateActivities %}
+    	<option><a href='#'>{{activity.name}}</a></option>
+    {% endfor %}
+</select>
 {% endblock %}

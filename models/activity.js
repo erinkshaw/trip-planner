@@ -1,5 +1,5 @@
 const Sequelize = require('sequelize')
-var db = require('./index.js');
+var db = require('./_db');
 
 const Activity = db.define('activity', {
   name: {
@@ -12,6 +12,4 @@ const Activity = db.define('activity', {
   }
 })
 
-module.exports = {
-  Activity: Activity
-}
+module.exports = Activity;

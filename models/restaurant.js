@@ -1,5 +1,5 @@
 const Sequelize = require('sequelize')
-var db = require('./index.js');
+var db = require('./_db');
 
 const Restaurant = db.define('restaurant', {
   name: {
@@ -16,6 +16,4 @@ const Restaurant = db.define('restaurant', {
   }
 })
 
-module.exports = {
-  Restaurant: Restaurant
-}
+module.exports = Restaurant;

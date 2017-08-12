@@ -1,5 +1,5 @@
 const Sequelize = require('sequelize')
-var db = require('./index.js');
+var db = require('./_db');
 console.log(db)
 
 const Place = db.define('place', {
@@ -25,6 +25,4 @@ const Place = db.define('place', {
   }
 })
 
-module.exports = {
-  Place: Place
-}
+module.exports = Place;
